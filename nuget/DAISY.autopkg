@@ -1,0 +1,47 @@
+﻿nuget
+{
+	nuspec
+	{
+		id = DAISY;
+		version : 1.8.1;
+		title: DAISY;
+		authors: {Engin Tola};
+		owners: {Engin Tola};
+		licenseUrl: "http://raw.githubusercontent.com/ANTPro/daisy/master/licence.txt";
+		projectUrl: "http://github.com/ANTPro/daisy";
+		iconUrl: "http://github.com/ANTPro/daisy/blob/master/nuget/icon/Daisy.png?raw=true";
+		requireLicenseAcceptance:false;
+		summary: "";
+		releaseNotes: "bugfix for unnecessary memcpy bug - valgrind catch";
+		tags: { Dense Matching, native };
+	};
+	files
+	{
+		#defines
+		{
+			INCLUDE   = ..\include;
+			LIBRARY   = ..\lib;
+		}
+		daisyInclude: 
+		{
+			#destination = ${d_include}\daisy;
+			"${INCLUDE}\daisy\daisy.h"
+		};
+		kutilityInclude:
+		{
+			#destination = ${d_include}\kutility;
+			"${INCLUDE}\kutility\kutility.def",
+			"${INCLUDE}\kutility\fileio.tcc",
+			"${INCLUDE}\kutility\*.h",
+		};
+		
+		[v110,release]
+		{
+			lib: ${LIBRARY}\daisy.lib;
+		}
+		[v110,debug]
+		{
+			lib: ${LIBRARY}\daisyd.lib;
+		}
+	}
+}
