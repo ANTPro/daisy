@@ -14,7 +14,7 @@
 		description: "A Fast Local Descriptor for Dense Matching";
 		releaseNotes: "Package for VS2012";
 		copyright: "Copyright 2014";
-		tags: { Dense Matching, native };
+		tags: { Dense Matching };
 	};
 	files
 	{
