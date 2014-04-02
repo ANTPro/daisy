@@ -11,8 +11,9 @@
 		projectUrl: "http://github.com/ANTPro/daisy";
 		iconUrl: "http://github.com/ANTPro/daisy/blob/master/nuget/icon/Daisy.png?raw=true";
 		requireLicenseAcceptance:false;
-		summary: "";
-		releaseNotes: "bugfix for unnecessary memcpy bug - valgrind catch";
+		description: "A Fast Local Descriptor for Dense Matching";
+		releaseNotes: "Package for VS2012";
+		copyright: "Copyright 2014";
 		tags: { Dense Matching, native };
 	};
 	files
