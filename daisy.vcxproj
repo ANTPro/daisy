@@ -51,12 +51,12 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <OpenMPSupport>true</OpenMPSupport>
-      <PreprocessorDefinitions>WIN32</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;USE_OPENMP</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>WIN32</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;USE_OPENMP</PreprocessorDefinitions>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
