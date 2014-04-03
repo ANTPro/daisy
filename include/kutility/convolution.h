@@ -64,7 +64,7 @@ namespace kutility
       if( h == 256 && w ==  256 ) { convolve_sym_(out, 256, 256, kernel, ksize); return; }
       if( h == 128 && w ==  128 ) { convolve_sym_(out, 128, 128, kernel, ksize); return; }
       if( h == 128 && w ==  192 ) { convolve_sym_(out, 128, 192, kernel, ksize); return; }
-      cout<<"[convolve_sym] insert this h,w to unrolling list: "<<h<<" "<<w<<endl;
+      //cout<<"[convolve_sym] insert this h,w to unrolling list: "<<h<<" "<<w<<endl;
       convolve_sym_(out, h, w, kernel, ksize);
    }
    inline void convolve_sym( double* image, int h, int w, double* kernel, int ksize, double* out=NULL )
@@ -82,7 +82,7 @@ namespace kutility
       if( h == 256 && w ==  256 ) { convolve_sym_(out, 256, 256, kernel, ksize); return; }
       if( h == 128 && w ==  128 ) { convolve_sym_(out, 128, 128, kernel, ksize); return; }
       if( h == 128 && w ==  192 ) { convolve_sym_(out, 128, 192, kernel, ksize); return; }
-      cout<<"[convolve_sym] insert this h,w to unrolling list: "<<h<<" "<<w<<endl;
+      //cout<<"[convolve_sym] insert this h,w to unrolling list: "<<h<<" "<<w<<endl;
       convolve_sym_(out, h, w, kernel, ksize);
    }
 }
